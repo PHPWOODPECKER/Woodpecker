@@ -102,8 +102,8 @@ $router->post(['user'], function() {
 });
 
 // Define a URL route
-$router->url(['/path', 'action'], function() {
-    echo "Action executed!";
+$router->url("/path/{param}", function($param) {
+    echo "$param executed!";
 });
 
 // Run the router
