@@ -79,13 +79,13 @@ $stmt = DataBase::prepareAndExecute('SELECT * FROM users WHERE status = :status'
 
 The Table class provides an interface for performing CRUD operations on database tables. It includes methods for selecting, inserting, updating, and deleting records, as well as utility functions for data retrieval and manipulation.
 
-##Key Features
+###Key Features
 
 CRUD Operations: Supports creating, reading, updating, and deleting records.
 - **Data Retrieval**: Fetches records based on various conditions.
 Input Validation: Implements input validation to prevent SQL injection attacks.
 
-##Methods
+###Methods
 - `connection(array $connectionParams, string $primaryKey)`: Establishes a connection to the database using the provided connection parameters and sets the primary key.  
 - `disconnection()` : Closes the database connection.
   
@@ -145,7 +145,7 @@ Table::disconnection();
 
 The Tools class provides a set of utility methods for common tasks such as data formatting, string manipulation, and record manipulation.
 
-##Key Features
+###Key Features
 
 **Data Conversion**: Converts collections to arrays or JSON strings.
 **Data Manipulation**: Includes methods for finding, deleting, updating, and grouping records.
