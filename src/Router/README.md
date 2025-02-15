@@ -43,9 +43,26 @@ Registers a route for the PUT method.
 
 Registers a route for the DELETE method.
 
+### `public function head(array $url, string|array|callable $callback, string $middleware = ''): void`
+
+Registers a route for the HEAD method.
+
+### `public function options(array $url, string|array|callable $callback, string $middleware = ''): void`
+
+Registers a route for the OPTIONS method.
+
 ### `public function multiMethod(string $methods, array $uri, string|callable $callback, string $middleware = ''): void`
 
 Registers a route for multiple HTTP methods.
+
+### `public function url(string $url, string|callable $action, string $middleware = ''): void`
+
+Registers a URL route with an action. This method processes the URL and action provided and matches it against the current request URI to execute the specified action.
+
+-   **Parameters**:
+    -   `string $url`: The URL pattern expected.
+    -   `string|callable $action`: The action to execute for this route.
+    -   `string $middleware`: Optional middleware to execute before the route.
 
 ### `public function middleware(string $name, callable $callback): void`
 
@@ -53,11 +70,19 @@ Defines a middleware function that can be executed before route actions.
 
 ### `private function sanitizeInput($input): mixed`
 
-Sanitizes input data to prevent XSS attacks by converting special characters to HTML entities.
+Sanitizes the input data to prevent XSS attacks by converting special characters to HTML entities.
 
 ### `private function findRoute(string $method): array`
 
 Finds a route that matches the given HTTP method.
+
+### `private function invokeCF($class, $function, $params)`
+
+Invokes a method from a specified class with the given parameters.
+
+### `private function runMiddleware($middleware): void`
+
+Executes the specified middleware.
 
 ## 🚀 Usage Example
 
@@ -74,6 +99,11 @@ $router->get(['user', '{id}'], function($id) {
 // Define a POST route
 $router->post(['user'], function() {
     echo "User created!";
+});
+
+// Define a URL route
+$router->url(['/path', 'action'], function() {
+    echo "Action executed!";
 });
 
 // Run the router
