@@ -1,4 +1,5 @@
 <?php
+//autoloader
 $namespaces = [
    "Woodpecker/WPException" => "/WPException.php",
     "Woodpecker/Crypto" => "/Crypto/Cryption.php",
@@ -7,21 +8,11 @@ $namespaces = [
     "Woodpecker/DataBase/Tools" => "/DataBase/Tools.php",
     "Woodpecker/Router" => "/Router/RouterSystem.php",
     "Woodpecker/Validator" => "/Validator/ValidatorSystem.php",
-    "Woodpecker/Helper/Redirect" => "/HelperFunction/Redirect.php",
-    "Woodpecker/Helper/Response" => "/HelperFunction/Response.php",
-    "Woodpecker/Helper/Request" => "/HelperFunction/Request.php",
+    "Woodpecker/Support/Redirect" => "/Support/Redirect.php",
+    "Woodpecker/Support/Response" => "/Support/Response.php",
+    "Woodpecker/Support/Request" => "/Support/Request.php",
     "Woodpecker/Controller" => "/Controller/Controller.php"
 ];
-
-// $helperNamespace = [
-//   "/HelperFunction/Redirect.php",
-//  "/HelperFunction/Response.php",
-//  "/HelperFunction/Request.php",
-//   ];
-//   
-//   foreach ($helperNamespace as $helper){
-//     require_once(__DIR__ . $helper);
-//   }
 
 spl_autoload_register(function($class) use ($namespaces) {
   $class = str_replace('\\', '/', trim($class));
