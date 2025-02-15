@@ -152,14 +152,15 @@ The Tools class provides a set of utility methods for common tasks such as data 
 **Collection Handling**: Provides functionalities to retrieve the first, last, or a random record from a collection.
 Methods
 
--`__construct(\PDO $pdo, string $table, string $primaryKey, array $collection)` : Initializes a new instance of the Tools class.
--`getArray()` : Returns the collection as an array.
--`getJson()`: Converts the collection to a JSON string.
--`find(string $field, $value)` : Searches the collection for records that match the given field and value.
--`delete()` : Deletes the first record in the collection from the database based on the primary key.
--`update(array $values)` : Updates the first record in the collection with new values.
--`count()` : Counts the number of records in the collection.
--`getLast()` : Returns the last record from the collection.
--`getFirst()` : Returns the first record from the collection.
--`getRandom()` : Returns a random record from the collection.
--`groupBy($key)` : Groups the collection by a specified key.
+- `__construct(\PDO $pdo, string $table, string $primaryKey, array $collection)` : Initializes a new instance of the Tools class.
+- 
+- `getArray()` : Returns the collection as an array.
+- `getJson()`: Converts the collection to a JSON string.
+- `find(string $field, $value)` : Searches the collection for records that match the given field and value.
+- `delete()` : Deletes the first record in the collection from the database based on the primary key.
+- `update(array $values)` : Updates the first record in the collection with new values.
+- `count()` : Counts the number of records in the collection.
+- `getLast()` : Returns the last record from the collection.
+- `getFirst()` : Returns the first record from the collection.
+- `getRandom()` : Returns a random record from the collection.
+- `groupBy($key)` : Groups the collection by a specified key.
