@@ -6,6 +6,7 @@ $namespaces = [
     "Woodpecker/Filemanager" => "/FileManage/FileManager.php",
     "Woodpecker/DataBase/Table" => "/DataBase/Table.php",
     "Woodpecker/DataBase/Tools" => "/DataBase/Tools.php",
+    "Woodpecker/DataBase/DataBase" => "/DataBase/DataBase.php",
     "Woodpecker/Router" => "/Router/RouterSystem.php",
     "Woodpecker/Validator" => "/Validator/ValidatorSystem.php",
     "Woodpecker/Support/Redirect" => "/Support/Redirect.php",
