@@ -41,4 +41,20 @@ echo Table::find('user', 'name', 'ali')->getJson();
 ```
 ### Validator
 
+- [Complete content](src/Validator/)
+
+  #### using
+  ```php
+  use Woodpecker\Validator;
+
+  Validator::make([], []);
+
+  if(Validator::fails()){
+  }else{
+  echo Validator::errors();
+  }
+  
+
+  ```
+
 ### Crypto
