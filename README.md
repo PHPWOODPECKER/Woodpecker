@@ -5,6 +5,8 @@
 
 - **The only way to install and use this micro framework is to download it from here and upload it to your host**
 
+-  **To use it, just add the `autoload` file to your project with `require_once`**
+
 ## Capabilities
 
 ### Router 
