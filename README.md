@@ -7,6 +7,10 @@
 
 -  **To use it, just add the `autoload` file to your project with `require_once`**
 
+  ```php
+  require_once(__DIR__. "/Woodpecker/src/autoload.php");
+  ```
+
 ## Capabilities
 
 ### Router 
