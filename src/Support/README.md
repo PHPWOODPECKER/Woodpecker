@@ -11,8 +11,6 @@ This repository contains helper classes designed to simplify common tasks in PHP
     - [Request](#request)
     - [Response](#response)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
