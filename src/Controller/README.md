@@ -12,8 +12,6 @@ The `Controller` class serves as a base controller for applications using the Wo
 - [Usage](#usage)
   - [Response Method](#response-method)
   - [Redirect Method](#redirect-method)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
