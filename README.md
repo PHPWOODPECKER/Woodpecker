@@ -14,7 +14,7 @@ $router->url('/patch', function() use ($router){
 $router->get(['name', 'email'], "Woodpecker\Controllers\User@request:find");
 });
 ```
-- [Complete content][src/Router/]
+- [Complete content](src/Router/)
 ### Database
 
 ### Validator
