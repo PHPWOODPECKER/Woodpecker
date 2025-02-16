@@ -1,6 +1,10 @@
 # Woodpecker
 **Woodpecker micro framework**
 
+## installation
+
+- **The only way to install and use this micro framework is to download it from here and upload it to your host**
+
 ## Capabilities
 
 ### Router 
@@ -58,3 +62,12 @@ echo Table::find('user', 'name', 'ali')->getJson();
   ```
 
 ### Crypto
+
+- [Complete content](src/Crypto/)
+
+  #### using 
+  ```php
+  use Woodpecker\Crypto;
+
+  Crypto::encrypt('', '');
+  ```
