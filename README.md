@@ -77,3 +77,8 @@ echo Table::find('user', 'name', 'ali')->getJson();
 
   Crypto::encrypt('', '');
   ```
+
+
+# Manufacturer information 
+- `name` : **woodpecker**
+- `telegram` : [Woodpeacker_dev](t.me/Woodpeacker_dev)
