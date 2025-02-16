@@ -1,9 +1,11 @@
 # Woodpecker
-Woodpecker micro framework
+**Woodpecker micro framework**
 
 ## Capabilities
 
 ### Router 
+- [Complete content](src/Router/)
+  
  #### using 
  ```php
 use Woodpecker\Router;
@@ -15,12 +17,27 @@ $router->get(['name', 'email'], "Woodpecker\Controllers\User@request:find");
 });
 ```
 
-- [Complete content](src/Router/)
  
 ### Database
+- [Complete content](src/DataBase/)
+  
  #### using 
+ ##### Database
  ```php
-use Woodpecker\DataBase 
+use Woodpecker\DataBase\DataBase;
+
+DataBase::connection([]);
+
+DataBase::dropTable('user');
+```
+##### Table 
+```php
+use Woodpecker\DataBase\Table;
+
+Table::connection([]);
+
+echo Table::find('user', 'name', 'ali')->getJson();
+
 ```
 ### Validator
 
