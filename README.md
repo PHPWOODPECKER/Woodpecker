@@ -81,4 +81,4 @@ echo Table::find('user', 'name', 'ali')->getJson();
 
 # Manufacturer information 
 - `name` : **woodpecker**
-- `telegram` : [Woodpeacker_dev](t.me/Woodpeacker_dev)
+- `telegram` : [Woodpeacker_dev](https://t.me/Woodpeacker_dev)
