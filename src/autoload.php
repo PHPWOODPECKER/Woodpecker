@@ -33,9 +33,7 @@ spl_autoload_register(function($class) use ($namespaces) {
     }
     
     if(file_exists($file)){
-      error_log("Loading $class from " . $file);
-      require_once($file);
-    
+      require_once($file);    
     }else{
       error_log("not found $file");
     }
