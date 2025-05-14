@@ -20,16 +20,24 @@
  ```php
 use Woodpecker\Router;
 
-$router = new Router();
-
-$router->url('/patch', function() use ($router){
-$router->get(['name', 'email'], "Woodpecker\Controllers\User@request:find");
+Routet::url('/patch', function(){
+Router::get(['name', 'email'], "Woodpecker\Controllers\User@find");
 });
+```
+
+##### in View/roters.php file
+
+```php
+
+$router->url("/patch", function(){
+  echo "hello";
+});
+
 ```
 
  
 ### Database
-- [Complete content](src/DataBase/)
+- [Complete content](Project/Woodpecker/DataBase/)
   
  #### using 
  ##### Database
@@ -51,7 +59,7 @@ echo Table::find('user', 'name', 'ali')->getJson();
 ```
 ### Validator
 
-- [Complete content](src/Validator/)
+- [Complete content](Project/Woodpecker//Validator/)
 
   #### using
   ```php
